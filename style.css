@@ -1,0 +1,61 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(199, 205, 211);
+    color: yellow;
+
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: yellow;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+
+}
+
+.menu-toggle .bar {
+    width: 30px;
+    height: 5px;
+    background-color: antiquewhite;
+    margin: 4px 0;
+ }
+
+ @media screen and (max-width: 600px) {
+    .menu-toggle {
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: rgb(226, 177, 198);
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 5px;
+    }
+
+
+
+ }
