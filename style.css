@@ -1,10 +1,14 @@
+body {
+    background-color: rgb(255, 239, 213);
+}
+
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: rgb(199, 205, 211);
-    color: yellow;
+    background-color: rgb(255, 218, 185);
+    color: rgb(71, 71, 69);
 
 }
 
@@ -17,7 +21,7 @@
 
 .nav-links li a {
     text-decoration: none;
-    color: yellow;
+    color: rgb(71, 71, 69);
 }
 
 .menu-toggle {
@@ -29,8 +33,13 @@
 .menu-toggle .bar {
     width: 30px;
     height: 5px;
-    background-color: antiquewhite;
+    background-color: rgb(71, 71, 69);
     margin: 4px 0;
+ }
+
+ .menu {
+    position: relative;
+    z-index: 8;
  }
 
  @media screen and (max-width: 600px) {
@@ -41,10 +50,10 @@
         display: none;
         flex-direction: column;
         position: absolute;
-        top: 50px;
+        top: 30px;
         left: 0;
         width: 100%;
-        background-color: rgb(226, 177, 198);
+        background-color: rgb(255, 218, 185);
     }
 
     .nav-links.show {
@@ -56,6 +65,50 @@
         padding: 5px;
     }
 
-
-
  }
+
+ #hatterkep {
+    width: 95%;
+    padding: 20px;
+    margin: 20px;
+ }
+
+ #hatterkep img {
+    display: inline;
+    width: 95%;
+    align-items: center;
+ }
+
+ #gridek {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 25px;
+    gap: 5px;
+    justify-content: center;
+    align-content: center;
+ }
+
+ .kartyak {
+    text-align: center;
+ }
+
+ @media screen and (max-width: 600px) {
+    #gridek {
+        grid-template-columns: 1fr;
+    }
+ }
+
+h1 {
+    text-align: center;
+}
+
+.cikkek {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 25px;
+    gap: 5px;
+    justify-content: center;
+    align-content: center;
+ }
+
+ 
