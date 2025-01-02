@@ -7,6 +7,66 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+   
+    <div class="menu">
+        <nav class="navbar">
+          <div class="menu-toggle" id="menu-toggle">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+          </div>
+      
+          <ul class="nav-links" id="nav-links">
+              <li><a href="#">Főoldal</a></li>
+              <li><a href="#">Bemutatkozás</a></li>
+              <li><a href="#">Tanácsadás</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Elérhetőség</a></li>
+          </ul>
+      
+      </nav>
+       </div>
     
+
+       <div class="keret">
+        <form action="urlap.html">
+            <h1>Jelentkezés személyreszabott tanácsadásra</h1>
+            <div>
+                <label for="nev">Név: <sup>*</sup></label><br>
+                <input type="text" name="nev" id="nev" required>
+            </div>
+            <div>
+                <label for="mail">E-mail: <sup>*</sup></label><br>
+                <input type="email" name="mail" id="mail" required>
+            </div>
+            <div>
+                <label for="tel">Telefonszám: <sup>*</sup></label><br>
+                <input type="tel" name="tel" id="tel" required>
+            </div>
+            <div>
+                <p>Pontos kérdés leírása:</p>
+                <textarea name="megjegyzes" id="megjegyzes" cols="40" rows="12"></textarea>
+            </div>
+            <div>
+                <p>Hozzájárulok egyéb levelekhez is:</p>
+                <input type="radio" name="egyeb" id="igen">
+                <label for="igen">Igen</label>
+                <input type="radio" name="egyeb" id="nem">
+                <label for="nem">Nem</label>
+            </div>
+            <div>
+                <input type="checkbox" name="hirlevel" id="hirlevel">
+                <label for="hirlevel" class="cbox">Szeretnék feliratkozni a hírlevélre</label>
+            </div>
+            <div>
+                <input type="checkbox" name="aszf" id="aszf" required>
+                <label for="aszf" class="cbox">Elfogadom az ÁSZF-t. <sup>*</sup></label>
+            </div>
+            <input type="submit" value="Küldés">
+            <input type="reset" value="Alaphelyzet">
+        </form>
+     </div>   
+
+<script src="script.js"></script>
 </body>
 </html>
