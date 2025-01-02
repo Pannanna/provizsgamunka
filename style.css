@@ -247,7 +247,6 @@ input[type=radio] {
     width: 300pt;
     border: solid black 3pt;
     border-collapse: collapse;
-    font-weight: bold;
     border-color: rgb(255, 218, 185);
 }
 
@@ -263,7 +262,7 @@ th {
 }
 
 td {
-    width: 20%;s
+    width: 20%;
     font-size: 15pt;
     width: 180pt;
     text-align: left;
@@ -274,3 +273,55 @@ td {
     width: 120pt;
     text-align: center;
 }
+
+#kapcsolatP {
+    text-decoration: none;
+    text-align: left;
+    font-weight: normal;
+    float: left;
+    width: 300pt;
+    margin-top: 40px;
+    margin-left: 400px;
+    margin-right: 20px;
+    line-height: 2;
+    font-size: large;
+}
+
+#tablazat {
+    float: right;
+    margin-right: 400px;
+    margin-left: 10px;
+}
+
+span {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1000px) {
+    #kapcsolatP {
+        float: none;
+        margin: 200px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    #tablazat {
+        float: none;
+        margin: 200px;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #kapcsolatP {
+        float: none;
+        margin: 20px;
+    }
+
+    #tablazat {
+        float: none;
+        margin: 20px;
+    }
+}
+
