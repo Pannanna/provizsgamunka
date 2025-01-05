@@ -52,7 +52,7 @@ body {
         position: absolute;
         top: 30px;
         left: 0;
-        width: 100%;
+        width: 92.5%;
         background-color: rgb(255, 218, 185);
     }
 
@@ -74,7 +74,6 @@ body {
  }
 
  #hatterkep img {
-    display: inline;
     width: 99%;
     align-items: center;
  }
@@ -123,7 +122,6 @@ h1 {
  }
 
  footer {
-    width: 90%;
     text-align: center;
     padding: 10px;
     color: aliceblue;
@@ -146,7 +144,7 @@ h1 {
  
 
 .keret {
-    width: 350px;
+    width: 400px;
     background-color: rgb(255, 218, 185);
     margin: 0 auto;
     margin-top: 30px;
@@ -164,6 +162,7 @@ input[type=text] {
     color:black;
     margin-top: 5px;
     width: 250px;
+    margin-left: 100px;
 }
 
 input[type=email] {
@@ -171,6 +170,7 @@ input[type=email] {
     color: black;
     margin-top: 5px;
     width: 250px;
+    margin-left: 100px;
 }
 
 input[type=tel] {
@@ -178,17 +178,13 @@ input[type=tel] {
     color: black;
     margin-top: 5px;
     width: 250px;
+    margin-left: 100px;
 }
 
 textarea{
     background-color: #fff;
-}
-
-
-p {
-    text-align: left;
-    text-decoration: underline;
-    font-weight: bold;
+    margin-left: 100px;
+    width: 250px;
 }
 
 sup {
@@ -206,11 +202,16 @@ input[type=submit] {
     font-size: 20px;
     font-style: oblique;
 }
+
+input[type=submit]:hover {
+    background-color: #cccaca;
+}
  
 
 input[type=radio] {
    margin: 20px;
    margin-top: 0;
+   margin-left: 100px;
 }
 
 .cbox {
@@ -278,25 +279,31 @@ td {
     text-decoration: none;
     text-align: left;
     font-weight: normal;
-    float: left;
+    /*float: left;*/
     width: 300pt;
     margin-top: 40px;
     margin-left: 400px;
     margin-right: 20px;
     line-height: 2;
     font-size: large;
+    
 }
+
+/* 
 
 #tablazat {
     float: right;
     margin-right: 400px;
     margin-left: 10px;
 }
-
+*/
 span {
     font-weight: bold;
     text-decoration: underline;
 }
+
+
+
 
 @media screen and (max-width: 1000px) {
     #kapcsolatP {
@@ -325,3 +332,152 @@ span {
     }
 }
 
+
+.tanacsadasGomb {
+    width: 200px;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 239, 213);
+    font-style: oblique;
+    color: rgb(71, 71, 69);
+    font-weight: bold;
+    border-color: rgb(255, 239, 213);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.tanacsadasGomb:hover {
+    background-color: #cccaca;
+}
+
+#tovabbiCikkek:hover {
+    background-color: #cccaca;
+}
+
+
+.indexCim {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 600px) {
+    #hatterkep {
+       margin: 0 auto;
+       padding: 0px;
+       margin: 0px;
+       margin-left: 10px;
+       margin-top: 10px;
+    }
+    footer {
+        margin: 0 auto;
+        padding: 0;
+        padding-top: 10px;
+        margin-top: 20px
+    };
+
+    .cikkek {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .gridek {
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .indexCim {
+        margin: 0 auto;
+    }
+}
+
+#container3 {
+    display: block;
+}
+
+
+#kapcs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+#kapcsolatP {
+    flex: 1 1 60%;
+    text-align: center;
+    justify-content: center;
+}
+
+#tablazat {
+    flex: 1 1 35%;
+    margin-left: -100px;
+}
+
+#kapcsH {
+    margin-left: 60px;
+    text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+    #tablazat {
+        padding: 10px;
+        margin: 10px;
+    }
+}
+
+
+#kapcsFoot {
+    margin-top: 269px;
+}
+
+#blogFoot {
+    margin-top: 30px;
+}
+
+#tanFoot {
+    margin-top: 30px;
+}
+
+
+.container5 {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   justify-content: center;
+   margin: 20px;
+}
+
+#onarckep {
+   max-width: 600px;
+   width: 100%;
+   margin-right: 20px;
+   margin-bottom: 20px;
+   flex-shrink: 0;
+}
+
+.szoveg3 {
+    flex: 1;
+    width: 50%;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 600px) {
+    .conatiner5 {
+        flex-direction: column;
+    }
+    #onarckep {
+        margin-right: 0;
+    }
+    .szoveg3 {
+        width: 80%;
+    }
+}
