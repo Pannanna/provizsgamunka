@@ -341,12 +341,12 @@ span {
 @media screen and (max-width: 600px) {
     #kapcsolatP {
         float: none;
-        margin: 20px;
+        margin: 0 auto;
     }
 
     #tablazat {
         float: none;
-        margin: 20px;
+        margin: 0 auto;
     }
 }
 
@@ -519,5 +519,8 @@ span {
     }
     input[type=text], input[type=email], input[type=tel], textarea {
         width: 190px;
+    }
+    #visszagombKapcs {
+        margin: 0 auto;
     }
 }
