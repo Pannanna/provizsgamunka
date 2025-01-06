@@ -240,6 +240,22 @@ input[type=radio] {
     align-items: center;
 }
 
+.back-button {
+    width: 150px;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(255, 218, 185);
+    font-style: oblique;
+    color: rgb(71, 71, 69);
+    font-weight: bold;
+    border-color: rgb(255, 218, 185);
+    text-align: center;
+    display: flex;
+    justify-content: left;
+   align-items: start;
+}
+
 
 #tablazat table, th, td {
     margin: 0 auto;
@@ -355,6 +371,10 @@ span {
 }
 
 #tovabbiCikkek:hover {
+    background-color: #cccaca;
+}
+
+.back-button:hover {
     background-color: #cccaca;
 }
 
