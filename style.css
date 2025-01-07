@@ -42,30 +42,6 @@ body {
     z-index: 8;
  }
 
- @media screen and (max-width: 600px) {
-    .menu-toggle {
-        display: flex;
-    }
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 30px;
-        left: 0;
-        width: 92.5%;
-        background-color: rgb(255, 218, 185);
-    }
-
-    .nav-links.show {
-        display: flex;
-    }
-
-    .nav-links li {
-        text-align: center;
-        padding: 5px;
-    }
-
- }
 
  #hatterkep {
     width: 95%;
@@ -91,10 +67,13 @@ body {
     text-align: center;
  }
 
+ .kartyak p {
+    text-align: justify;
+    font-size: large;
+ }
+
  @media screen and (max-width: 600px) {
-    #gridek {
-        grid-template-columns: 1fr;
-    }
+   
  }
 
 h1 {
@@ -112,9 +91,7 @@ h1 {
  }
 
  @media screen and (max-width: 600px) {
-    .cikkek {
-        grid-template-columns: 1fr;
-    }
+    
  }
 
  .cikkKepek {
@@ -222,7 +199,8 @@ input[type=radio] {
 .blogcikk {
     text-decoration: none;
     font-weight: normal;
-    text-align: center;
+    text-align: justify;
+    font-size: large;
 }
 
 #tovabbiCikkek {
@@ -295,7 +273,7 @@ td {
 
 #kapcsolatP {
     text-decoration: none;
-    text-align: left;
+    text-align: justify;
     font-weight: normal;
     /*float: left;*/
     width: 300pt;
@@ -324,30 +302,12 @@ span {
 
 
 @media screen and (max-width: 1000px) {
-    #kapcsolatP {
-        float: none;
-        margin: 200px;
-        margin-bottom: 20px;
-        margin-top: 20px;
-    }
+    
 
-    #tablazat {
-        float: none;
-        margin: 200px;
-        margin-top: 20px;
-    }
 }
 
 @media screen and (max-width: 600px) {
-    #kapcsolatP {
-        float: none;
-        margin: 0 auto;
-    }
-
-    #tablazat {
-        float: none;
-        margin: 0 auto;
-    }
+   
 }
 
 
@@ -385,35 +345,6 @@ span {
     text-decoration: underline;
 }
 
-@media screen and (max-width: 600px) {
-    #hatterkep {
-       margin: 0 auto;
-       padding: 0px;
-       margin: 0px;
-       margin-left: 10px;
-       margin-top: 10px;
-    }
-    footer {
-        margin: 0 auto;
-        padding: 0;
-        padding-top: 10px;
-        margin-top: 20px
-    };
-
-    .cikkek {
-        margin: 0 auto;
-        padding: 0;
-    }
-
-    .gridek {
-        margin: 0 auto;
-        padding: 0;
-    }
-
-    .indexCim {
-        margin: 0 auto;
-    }
-}
 
 #container3 {
     display: block;
@@ -431,7 +362,7 @@ span {
 
 #kapcsolatP {
     flex: 1 1 60%;
-    text-align: center;
+    text-align: justify;
     justify-content: center;
 }
 
@@ -443,13 +374,6 @@ span {
 #kapcsH {
     margin-left: 60px;
     text-align: center;
-}
-
-@media screen and (max-width: 600px) {
-    #tablazat {
-        padding: 10px;
-        margin: 10px;
-    }
 }
 
 
@@ -485,24 +409,14 @@ span {
 .szoveg3 {
     flex: 1;
     width: 50%;
-    text-align: center;
+    text-align: justify;
+    font-size: large;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
     line-height: 1.5;
 }
 
-@media screen and (max-width: 600px) {
-    .conatiner5 {
-        flex-direction: column;
-    }
-    #onarckep {
-        margin-right: 0;
-    }
-    .szoveg3 {
-        width: 80%;
-    }
-}
 
 #visszagombKapcs {
     margin-left: 530px;
@@ -513,7 +427,108 @@ span {
     margin-top: 10px;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 480px) {
+    .menu-toggle {
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        width: 92.5%;
+        background-color: rgb(255, 218, 185);
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 5px;
+    }
+
+    #gridek {
+        grid-template-columns: 1fr;
+    }
+    .cikkek {
+        grid-template-columns: 1fr;
+    }
+    #kapcsolatP {
+        float: none;
+        margin: 200px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    #tablazat {
+        float: none;
+        margin: 200px;
+        margin-top: 20px;
+    }
+    #kapcsolatP {
+        float: none;
+        margin: 0 auto;
+    }
+
+    #tablazat {
+        float: none;
+        margin: 0 auto;
+        padding: 0;
+    }
+    #kapcsolatP {
+        float: none;
+        margin: 0 auto;
+    }
+
+    #tablazat {
+        float: none;
+        margin: 0;
+        padding: 0;
+    }
+    #hatterkep {
+        margin: 0 auto;
+        padding: 0px;
+        margin: 0px;
+        margin-left: 10px;
+        margin-top: 10px;
+     }
+     .footer {
+         margin: 0;
+         padding: 0;
+         padding-top: 10px;
+         margin-top: 20px;
+         max-width: 99%;
+     };
+ 
+     .cikkek {
+         margin: 0 auto;
+         padding: 0;
+     }
+ 
+     .gridek {
+         margin: 0 auto;
+         padding: 0;
+     }
+ 
+     .indexCim {
+         margin: 0 auto;
+     }
+     #tablazat {
+        padding: 0;
+        margin: 0;
+    }
+    .conatiner5 {
+        flex-direction: column;
+    }
+    #onarckep {
+        margin-right: 0;
+    }
+    .szoveg3 {
+        width: 80%;
+    }
     .keret {
         width: 300px;
     }
@@ -523,4 +538,532 @@ span {
     #visszagombKapcs {
         margin: 0 auto;
     }
-}
+    #kapcs {
+        padding: 0px;
+    }
+    .conatiner5 {
+        flex-direction: column;
+    }
+    #onarckep {
+        margin-right: 0;
+    }
+    .szoveg3 {
+        width: 80%;
+    }
+
+ }
+
+
+ @media screen and (max-width: 576px) {
+    .menu-toggle {
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        width: 92.5%;
+        background-color: rgb(255, 218, 185);
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 5px;
+    }
+
+    #gridek {
+        grid-template-columns: 1fr;
+    }
+    .cikkek {
+        grid-template-columns: 1fr;
+    }
+    #kapcsolatP {
+        float: none;
+        margin: 200px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    #tablazat {
+        float: none;
+        margin: 200px;
+        margin-top: 20px;
+    }
+    #kapcsolatP {
+        float: none;
+        margin: 0 auto;
+    }
+
+    #tablazat {
+        float: none;
+        margin: 0 auto;
+        padding: 0;
+    }
+    #kapcsolatP {
+        float: none;
+        margin: 0 auto;
+    }
+
+    #tablazat {
+        float: none;
+        margin: 0 auto;
+        padding: 0;
+    }
+    #hatterkep {
+        margin: 0 auto;
+        padding: 0px;
+        margin: 0px;
+        margin-left: 10px;
+        margin-top: 10px;
+     }
+     .footer {
+         margin: 0;
+         padding: 0;
+         padding-top: 10px;
+         margin-top: 20px;
+         width: 99%;
+     };
+ 
+     .cikkek {
+         margin: 0 auto;
+         padding: 0;
+     }
+ 
+     .gridek {
+         margin: 0 auto;
+         padding: 0;
+     }
+ 
+     .indexCim {
+         margin: 0 auto;
+     }
+     #tablazat {
+        padding: 0;
+        margin: 0;
+    }
+    .conatiner5 {
+        flex-direction: column;
+    }
+    #onarckep {
+        margin-right: 0;
+    }
+    .szoveg3 {
+        width: 80%;
+    }
+    .keret {
+        width: 300px;
+    }
+    input[type=text], input[type=email], input[type=tel], textarea {
+        width: 190px;
+    }
+    #visszagombKapcs {
+        margin: 0 auto;
+    }
+    #kapcs {
+        padding: 0px;
+    }
+    .conatiner5 {
+        flex-direction: column;
+    }
+    #onarckep {
+        margin-right: 0;
+    }
+    .szoveg3 {
+        width: 80%;
+    }
+
+ }
+
+ 
+ @media screen and (max-width: 1024px) {
+    .menu-toggle {
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        width: 92.5%;
+        background-color: rgb(255, 218, 185);
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 5px;
+    }
+
+    #gridek {
+        grid-template-columns: 1fr;
+    }
+    .cikkek {
+        grid-template-columns: 1fr;
+    }
+    #kapcsolatP {
+        float: none;
+        margin: 200px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    #tablazat {
+        float: none;
+        margin: 200px;
+        margin-top: 20px;
+    }
+    #kapcsolatP {
+        float: none;
+        margin: 0 auto;
+    }
+
+    #tablazat {
+        float: none;
+        margin: 0 auto;
+        padding: 0;
+    }
+    #kapcsolatP {
+        float: none;
+        margin: 0 auto;
+    }
+
+    #tablazat {
+        float: none;
+        margin: 0 auto;
+        padding: 0;
+    }
+    #hatterkep {
+        margin: 0 auto;
+        padding: 0px;
+        margin: 0px;
+        margin-left: 10px;
+        margin-top: 10px;
+     }
+     .footer {
+         margin: 0;
+         padding: 0;
+         padding-top: 10px;
+         margin-top: 20px; 
+         width: 99%;
+     };
+ 
+     .cikkek {
+         margin: 0 auto;
+         padding: 0;
+     }
+ 
+     .gridek {
+         margin: 0 auto;
+         padding: 0;
+     }
+ 
+     .indexCim {
+         margin: 0 auto;
+     }
+     #tablazat {
+        padding: 0;
+        margin: 0;
+    }
+    .conatiner5 {
+        flex-direction: column;
+    }
+    #onarckep {
+        margin-right: 0;
+    }
+    .szoveg3 {
+        width: 80%;
+    }
+    .keret {
+        width: 300px;
+    }
+    input[type=text], input[type=email], input[type=tel], textarea {
+        width: 190px;
+    }
+    #visszagombKapcs {
+        margin: 0 auto;
+    }
+    #kapcs {
+        padding: 0px;
+    }
+    .conatiner5 {
+        flex-direction: column;
+    }
+    #onarckep {
+        margin-right: 0;
+    }
+    .szoveg3 {
+        width: 80%;
+    }
+
+ }
+
+ @media screen and (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        width: 92.5%;
+        background-color: rgb(255, 218, 185);
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 5px;
+    }
+
+    #gridek {
+        grid-template-columns: 1fr;
+    }
+    .cikkek {
+        grid-template-columns: 1fr;
+    }
+    #kapcsolatP {
+        float: none;
+        margin: 200px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    #tablazat {
+        float: none;
+        margin: 200px;
+        margin-top: 20px;
+    }
+    #kapcsolatP {
+        float: none;
+        margin: 0 auto;
+    }
+
+    #tablazat {
+        float: none;
+        margin: 0 auto;
+        padding: 0;
+    }
+    #kapcsolatP {
+        float: none;
+        margin: 0 auto;
+    }
+
+    #tablazat {
+        float: none;
+        margin: 0 auto;
+        padding: 0;
+    }
+    #hatterkep {
+        margin: 0 auto;
+        padding: 0px;
+        margin: 0px;
+        margin-left: 10px;
+        margin-top: 10px;
+     }
+     .footer {
+         margin: 0;
+         padding: 0;
+         padding-top: 10px;
+         margin-top: 20px; 
+         width: 90%;
+     };
+ 
+     .cikkek {
+         margin: 0 auto;
+         padding: 0;
+     }
+ 
+     .gridek {
+         margin: 0 auto;
+         padding: 0;
+     }
+ 
+     .indexCim {
+         margin: 0 auto;
+     }
+     #tablazat {
+        padding: 0;
+        margin: 0;
+    }
+    .conatiner5 {
+        flex-direction: column;
+    }
+    #onarckep {
+        margin-right: 0;
+    }
+    .szoveg3 {
+        width: 80%;
+    }
+    .keret {
+        width: 300px;
+    }
+    input[type=text], input[type=email], input[type=tel], textarea {
+        width: 190px;
+    }
+    #visszagombKapcs {
+        margin: 0 auto;
+    }
+    #kapcs {
+        padding: 0px;
+    }
+    .conatiner5 {
+        flex-direction: column;
+    }
+    #onarckep {
+        margin-right: 0;
+    }
+    .szoveg3 {
+        width: 80%;
+    }
+
+ }
+
+ @media screen and (max-width: 1200px) {
+    .menu-toggle {
+        display: flex;
+    }
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 30px;
+        left: 0;
+        width: 92.5%;
+        background-color: rgb(255, 218, 185);
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links li {
+        text-align: center;
+        padding: 5px;
+    }
+
+    #gridek {
+        grid-template-columns: 1fr;
+    }
+    .cikkek {
+        grid-template-columns: 1fr;
+    }
+    #kapcsolatP {
+        float: none;
+        margin: 200px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    #tablazat {
+        float: none;
+        margin: 0;
+        margin-top: 0;
+    }
+    #kapcsolatP {
+        float: none;
+        margin: 0 auto;
+    }
+
+    #tablazat {
+        float: none;
+        margin: 0 auto;
+        padding: 0;
+    }
+    #kapcsolatP {
+        float: none;
+        margin: 0 auto;
+    }
+
+    #tablazat {
+        float: none;
+        margin: 0 auto;
+        padding: 0;
+    }
+    #hatterkep {
+        margin: 0 auto;
+        padding: 0px;
+        margin: 0px;
+        margin-left: 10px;
+        margin-top: 10px;
+     }
+     .footer {
+         margin: 0;
+         padding: 0;
+         padding-top: 10px;
+         margin-top: 20px; 
+         width: 99%;
+     };
+ 
+     .cikkek {
+         margin: 0 auto;
+         padding: 0;
+     }
+ 
+     .gridek {
+         margin: 0 auto;
+         padding: 0;
+     }
+ 
+     .indexCim {
+         margin: 0 auto;
+     }
+     #tablazat {
+        padding: 0;
+        margin: 0;
+    }
+    .conatiner5 {
+        flex-direction: column;
+    }
+    #onarckep {
+        margin-right: 0;
+    }
+    .szoveg3 {
+        width: 80%;
+    }
+    .keret {
+        width: 300px;
+    }
+    input[type=text], input[type=email], input[type=tel], textarea {
+        width: 190px;
+    }
+    #visszagombKapcs {
+        margin: 0 auto;
+    }
+    #kapcs {
+        padding: 0px;
+    }
+    .conatiner5 {
+        flex-direction: column;
+    }
+    #onarckep {
+        margin-right: 0;
+    }
+    .szoveg3 {
+        width: 80%;
+    }
+
+ }
+
+ @media screen and (max-width: 1360px) {
+    #tablazat {
+        float: none;
+        margin: 0;
+        margin-top: 0;
+    }
+    
+ }
